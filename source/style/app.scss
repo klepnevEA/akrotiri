@@ -1,0 +1,18 @@
+$light_green: #71C9BC;
+$blue: #EFF8F6;
+
+
+@import 'common/_mixins';
+@import 'common/_fonts';
+@import 'common/_adjustment';
+@import 'common/_font-awesome';
+@import 'common/png_sprite';
+
+@import 'sections/_header';
+@import 'sections/_section_1';
+@import 'sections/_section_2';
+@import 'sections/_section_3';
+@import 'sections/_section_4';
+@import 'sections/_section_5';
+@import 'sections/_section_6';
+@import 'sections/_section_7';

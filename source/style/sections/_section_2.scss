@@ -1,0 +1,10 @@
+.section_2__block_left {
+  background-image: url("../../assets/img/images_1800/stock.jpg");
+  background-size: content;
+}
+
+.section_2 {
+	@include tablets {
+			flex-direction: column;
+  } 
+}

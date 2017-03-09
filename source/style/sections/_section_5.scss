@@ -1,0 +1,46 @@
+.section_5 {
+  background-image: url("../../assets/img/images_1800/nimbostratus.png");
+  background-size: cover;	
+  padding-top:2.2rem;
+  justify-content:space-between;
+  flex-wrap: wrap;
+
+}
+
+.section_5__block_left,
+.section_5__block_right {
+  flex-direction: column;
+  justify-content: flex-start;
+  align-content: flex-start;  	
+	background-color: #fff;
+	width: 37%;
+	min-width: 300px;
+	margin-bottom: 2rem;
+}
+
+.section_5__block_left {
+	margin-left:3.1rem;
+
+	@include laptop {
+		width: 100%;
+		margin-right:3.1rem;
+	}		
+}
+
+.section_5__block_right {
+	margin-right:3.1rem;
+
+	@include laptop {
+		width: 100%;
+		margin-left:3.1rem;
+	}		
+}
+
+.section_5__title_2 {
+	padding: 1.5rem 1rem;	
+	flex: 0 1 auto;
+}
+
+.section_5__text {
+	padding: 3.1rem 1rem;
+}

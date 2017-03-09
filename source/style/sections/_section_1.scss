@@ -1,0 +1,174 @@
+.section_top {
+  position: relative;
+  width: 100%;
+  height: 36rem;
+
+
+
+}
+
+.section_top__bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 77.4%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left bottom;
+  background-image: url("../../assets/img/images_1800/akrotiri-ash.jpg");
+  filter: brightness(60%);
+
+  @include phones {
+      width: 100%;
+  }    
+
+  &:after {
+    content: '';
+    position: absolute;
+    top:51%;
+    right: -50%;   
+    width: 50%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 77.4% bottom;
+    background-image: url("../../assets/img/images_1800/sity.jpg");
+
+
+  }  
+}
+
+.section_top__stones {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 76vw;
+  height: 12vw;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left bottom;
+  background-image: url("../../assets/img/images_1800/stones.png");
+  filter: brightness(60%); 
+  z-index:100;   
+}
+
+.main_title {
+  position: absolute;
+  bottom: -0.6vw;
+  font-size:17vw;
+  width: 100%;
+  text-align: center;
+  font-family: 'Museo Sans Cyrl 700';
+  color: #fff;
+  text-transform: capitalize;
+
+  @include desctopBig {
+      font-size:12.9rem;
+  }
+   
+}
+
+.main_text {
+  position: absolute;
+  top: 31%;
+  left: 5.2vw;
+  font-size: 1.77rem;
+  line-height: 1.09em;
+  text-align: center;
+  font-family: 'Museo Sans Cyrl 700';
+  text-align: left;
+  color: #fff;
+  text-transform: capitalize;   
+}
+
+.section_top__white_box {
+  position: absolute;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 41.3%;
+  height: 51%;
+  background-color: #fff;
+
+  @include phones {
+      display: none ;
+  }  
+}
+
+.section_top__white_box__wrap__text {
+  padding:  0.7rem 0 0 0;
+  line-height:1.2em;
+  color: $light_green;
+  font-family: 'Museo Sans Cyrl 300'; 
+  text-align: center; 
+
+  @include laptop {
+      font-size:0.9rem;
+  }  
+
+  @include tablets {
+      font-size:1rem;
+      padding-left:1rem;
+  }  
+}
+
+.section_top__white_box__img {
+  position: absolute;
+  bottom: 0;
+  width: 18.5vw;
+  height: 17vw;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: -20px bottom;
+  background-image: url("../../assets/img/images_1800/white.jpg"); 
+
+  @include tablets {
+      bottom: 17vw;
+  } 
+
+
+}
+
+.section_top__white_box__wrap {
+  position: absolute;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  left: 18.5vw;
+  bottom: 0;
+  width: 18.4vw;
+  height: 17vw;
+  background-color: #F7F7F7;
+
+  @include tablets {
+      flex-direction: row;    
+      left: 0;
+      width:  40.4vw;
+  }   
+}
+
+.section_top__white_box__wrap__circle {
+  position: relative;
+  border:2px solid $light_green;
+  width: 5.5vw;
+  height: 5.5vw;
+  border-radius: 50%;
+
+  &:after,
+  &:before {
+    content: '';
+    position: absolute ;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 0);
+    width: 2px;
+    height: 14px;
+    background-color: $light_green;
+  }
+
+  &:before {
+    width: 14px;
+    height: 2px;    
+  }
+}
